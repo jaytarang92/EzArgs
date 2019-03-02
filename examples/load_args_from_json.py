@@ -1,6 +1,6 @@
 from ez_args.parser import EasyArgs
 
-args_json = 'args_example.json'
+args_json = 'args_json/args_example.json'
 e = EasyArgs(arguments=args_json).parse_args()
 
 if e.file:
