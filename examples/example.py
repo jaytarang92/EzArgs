@@ -1,4 +1,4 @@
-from ex_args.parser import EasyArgs
+from ez_args.parser import EasyArgs
 
 args = [
     dict(name='--file'),
