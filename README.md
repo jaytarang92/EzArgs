@@ -22,7 +22,7 @@ if e.verbose_level:
 
 ```sh
   $ python examples/example.py --file this_is_a_test.py --verbose_level 9
-  file value: test.py
+  file value: this_is_a_test.py
   verbose_level value: 9
   
   $
@@ -30,7 +30,7 @@ if e.verbose_level:
 
 ```sh
   $ python examples/example.py -f this_is_a_test.py -v 9
-  file value: test.py
+  file value: this_is_a_test.py
   verbose_level value: 9
   
   $
