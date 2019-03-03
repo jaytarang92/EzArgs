@@ -1,8 +1,8 @@
 from ez_args.parser import EasyArgs
 
 args = [
-    dict(name='--file'),
-    dict(name='--verbose_level')
+    dict(name='file'),
+    dict(name='verbose_level')
 ]
 e = EasyArgs(arguments=args).parse_args()
 

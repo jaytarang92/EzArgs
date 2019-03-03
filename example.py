@@ -1,12 +1,12 @@
 from ez_args.parser import EasyArgs
 
-# json file to load
-args_json = 'args_json/args_example.json'
-# returns the arg namespaces
-e = EasyArgs(arguments=args_json).parse_args()
+args = [
+    dict(name='--file'),
+    dict(name='--verbose_level')
+]
+e = EasyArgs(arguments=args).parse_args()
 
 if e.file:
     print('file value: {}'.format(e.file))
 if e.verbose_level:
     print('verbose_level value: {}'.format(e.verbose_level))
-    
