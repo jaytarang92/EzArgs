@@ -9,8 +9,8 @@ argparse the ez py way
 from ez_args.parser import EasyArgs
 
 args = [
-    dict(name='--file'),
-    dict(name='--verbose_level')
+    dict(name='file'),
+    dict(name='verbose_level')
 ]
 e = EasyArgs(arguments=args).parse_args()
 
@@ -19,7 +19,7 @@ if e.file:
 if e.verbose_level:
     print('verbose_level value: {}'.format(e.verbose_level))
 ```
-
+### Full arg name
 ```sh
   $ python examples/example.py --file this_is_a_test.py --verbose_level 9
   file value: this_is_a_test.py
@@ -27,7 +27,7 @@ if e.verbose_level:
   
   $
 ```
-
+### Shorthand arg
 ```sh
   $ python examples/example.py -f this_is_a_test.py -v 9
   file value: this_is_a_test.py
@@ -35,4 +35,3 @@ if e.verbose_level:
   
   $
 ```
-Output of the commands is the same. 
