@@ -42,7 +42,8 @@ class EasyArgs:
         for _arg in self.arguments:
             try:
                 # slice the .get('name')[1:3] to extract the -f/ shorthand
-                self.parser.add_argument(_arg.get('name'), _arg.get('name')[1:3])
+                self.parser.add_argument('--{}'.format(_arg.get('name')), '-{}'.format( _arg.get('name')[1:3]),
+                                         default=_arg.get('value'))
             except Exception as e:
                 print(str(e))
 

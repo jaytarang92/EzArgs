@@ -1,8 +1,10 @@
 [
   {
-    "name": "file"
+    "name": "file",
+    "value": "sometextfile.txt"
   },
   {
-    "name": "verbose_level"
+    "name": "verbose_level",
+    "value": 9
   }
 ]
